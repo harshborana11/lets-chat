@@ -1,0 +1,140 @@
+body{
+    background: url(best.png),#03fc9d;
+}
+
+#message{
+position: fixed;
+width: 100vh;
+height: 10vh;
+bottom: 5px;
+transform: translateX(63%);
+background: #fff;
+border-radius: 40px;
+margin-left: 10px;
+text-align: center;
+font-size: 5vh;
+}
+button{
+    background-color: #fff;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 12.5vh;
+    height: 12.5vh;
+    i{
+        color: #21a37a;
+    }
+}
+#ww{
+    .login_container{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login_box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url('../th.jpg');
+        background-size: cover;
+        border-radius: 0;
+        box-shadow: 0 15px 20px #13ffff;
+        width: 70%;
+        height: 70%;
+        
+        
+        
+      }
+      .login_box h2 {
+        margin: 0 0 30px;
+        letter-spacing: 4px ;
+        text-transform: uppercase;
+        padding: 0;
+        color: #fff;
+        text-align: left;
+        margin:10px 20px;
+      }
+      .login_box .user_box{
+        position: relative;
+        padding: 5-0px 50px ;
+        margin: 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login_box .user_box input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px ;
+        color: #fff;
+        margin-bottom: 30px ;
+        border: none ;
+        border-bottom: 1px solid #fff;
+        outline:none;
+        background-color: transparent;
+      }
+      .login_box .user_box label{
+        position: absolute;
+        margin-left: 50px;
+        top: 0;
+        left: 0;
+        padding: 10px 0 ;
+        color: #fff;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+      .login_box .user_box input:focus~label,
+      .login_box .user_box input:valid~label{
+        top: -20px;
+        color: #13ffff;
+        font-size: 12px;
+      }
+      .login_box form .a{
+        background-color: #13ffff;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+       transition:1s all;
+       margin-top: 20px;
+       letter-spacing: 4px;
+       background-color:#13ffff;
+       border: 1px solid #13ffff;
+       position: absolute;
+       bottom: 6%;
+       left: 60%;
+      }
+      
+      .login_box form .a:hover{
+        background-color: #13ffff;
+        color: #fff;
+        box-shadow: 0 0 5px #13ffff,
+                    0 0 5px #13ffff,
+                    0 0 5px #13ffff,
+                    0 0 5px #13ffff;
+        
+      }             
+      
+      }
+      #messages{
+          h1{
+              font-size: 0.9rem;
+              color: #13ffff;
+              background-color: #f0d691;
+          }
+          h2{
+              font-size: 2rem;
+              color: #fff;
+              margin-bottom: 10vh;
+              background-color: #f0d691;
+          }
+
+            
+      }

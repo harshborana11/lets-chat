@@ -1,55 +1,58 @@
-<!-- create message fome to send message -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+  <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+</head>
+<body>
+
+  <header>
+    <div class="login_container"id="ww"style="display:block;">
+      <div class="login_box">
+        <h2>login</h2>
+        <form>
+          <div class="user_box">
+            <input type="password" id="pwd" name="password" required="" />
+            <label>UserName</label>
+          </div>
+          <input value="submit" type="submit" class="a" onclick="return check(this.form)" id="ok"type="submit">
+        </form>
+      </div>
+    </div>
+    <header id="i">
+      <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <!-- Navbar content -->
+      </nav>
+    </header>
+</header>  
+
+<div id="v" style="display: none;">
 <input placeholder="Type Message" id="message" autocomplete="off">
-<button onclick="sendmessage()" value="Submit">send</button>
+<button style="  border-radius: 100%; width: 12.5vh;
+height: 12.5vh;" onclick="sendmessage()"><i class="fad fa-paper-plane fa-5x"></i></i></button>
 
 <!-- create list-->
-<ui id="messages"></ui>
-
+<header id="messages"></header>
+</div>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBkCoZdCRvTj-wnCF7vfFD2VfP87HXcu-8",
-    authDomain: "lets-chat-1a5d4.firebaseapp.com",
-    databaseURL: "https://lets-chat-1a5d4.firebaseio.com",
-    projectId: "lets-chat-1a5d4",
-    storageBucket: "lets-chat-1a5d4.appspot.com",
-    messagingSenderId: "681891558347",
-    appId: "1:681891558347:web:b1cd2079957c8c3c09fc4e"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-// my app
-
-
-var myName= prompt("Enter Your Username For Chat ");
-
-function sendmessage(){
-  //message
-  var message = document.getElementById("message").value;
-  //save to data base
-  firebase.database().ref("messages").push().set({
-    "sender": myName,
-    "message": message
-  });
-  //false retrun
-  return false;
-}
-firebase.database().ref("messages").on("child_added",function(snapshot){
- var html="";
- html += "<li>";
-    html += snapshot.val().sender + ":" + snapshot.val().message;
- html += "</li>";
-
- document.getElementById("messages").innerHTML += html; 
- return true;
-});
-</script>
+     
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
