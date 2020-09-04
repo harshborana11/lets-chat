@@ -73,12 +73,6 @@ if(form.pwd.value == "Khushi")
  } else {
    y.style.display = "block";
  }
- var z = document.getElementById("i");
- if (z.style.display === "none") {
-   z.style.display = "block";
- } else {
-   z.style.display = "none";
- }
  //giving user name
 myName= "Khushi";     
    return false;

@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Lets Chat</title>
+  <link rel="shortcut icon" href="a.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
   <script src="sweetalert2/dist/sweetalert2.min.js"></script>
-  <!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+  
 </head>
 <body>
 
@@ -27,17 +26,11 @@
         </form>
       </div>
     </div>
-    <header id="i">
-      <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-        <!-- Navbar content -->
-      </nav>
-    </header>
 </header>  
 
 <div id="v" style="display: none;">
 <input placeholder="Type Message" id="message" autocomplete="off">
-<button style="  border-radius: 100%; width: 12.5vh;
-height: 12.5vh;" onclick="sendmessage()"><i class="fad fa-paper-plane fa-5x"></i></i></button>
+<button  onclick="sendmessage()"><i class="fad fa-paper-plane fa-5x"></i></i></button>
 
 <!-- create list-->
 <header id="messages"></header>
@@ -48,11 +41,6 @@ height: 12.5vh;" onclick="sendmessage()"><i class="fad fa-paper-plane fa-5x"></i
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-     
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>
