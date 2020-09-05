@@ -14,7 +14,7 @@ margin-left: 10px;
 text-align: center;
 font-size: 5vh;
 }
-button{
+span{
     background-color: #fff;
     border-radius: 100%;
     position: fixed;
@@ -25,6 +25,15 @@ button{
     i{
         color: #21a37a;
     }
+    #c{
+      transform: translate(25%,30%);
+    }
+}
+#a{
+  display: block;
+}
+#b{
+  display: none;
 }
 #ww{
     .login_container{
@@ -124,6 +133,7 @@ button{
       
       }
       #messages{
+        margin-bottom: 10vh;
           h1{
               font-size: 0.9rem;
               color: #13ffff;
@@ -135,4 +145,38 @@ button{
           }
 
             
+      }
+      @media screen and (max-width: 480px){
+        span{
+          background-color: #fff;
+          border-radius: 100%;
+          position: fixed;
+          bottom: 1%;
+          right: 0;
+          width: 8vh;
+          height: 8vh;
+          i{
+              color: #21a37a;
+              transform: translate(35%,37%);
+          }
+      }
+      
+      #a{
+        display: none;
+      }
+      #b{
+        display: block;
+      }
+      #message{
+        position: fixed;
+        width: 45vh;
+        height: 7vh;
+        bottom: 10px;
+        transform: translateX(-4%);
+        background: #fff;
+        border-radius: 40px;
+        margin-left: 10px;
+        text-align: center;
+        font-size: 3vh;
+      }
       }

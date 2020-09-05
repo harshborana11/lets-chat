@@ -20,6 +20,8 @@ var myname
 
 //form validation
 
+//first user name
+
 function check(form){
   if(form.pwd.value == "Harsh.1123")
 {
@@ -39,61 +41,34 @@ function check(form){
  //giving user name
 myName= "Harsh";     
    return false;
-const Toast = Swal.mixin({
- toast: true,
- position: 'top-end',
- showConfirmButton: false,
- timer: 3000,
- timerProgressBar: true,
- onOpen: (toast) => {
-   toast.addEventListener('mouseenter', Swal.stopTimer)
-   toast.addEventListener('mouseleave', Swal.resumeTimer)
- }
-})
-
-Toast.fire({
- icon: 'success',
- title: '<small>welcome web guru</small><br>You Have Signed in successfully'
-});
-
+}
+  if(form.pwd.value == "Khushi")
+  {
+   var x = document.getElementById("v");
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   } else {
+     x.style.display = "none";
+   }
+  
+   var y = document.getElementById("ww");
+   if (y.style.display === "block") {
+     y.style.display = "none";
+   } else {
+     y.style.display = "block";
+   }
+   //giving user name
+  myName= "Khushi";     
+     return false;
+  
+  
+  }
 
 }
-if(form.pwd.value == "Khushi")
-{
- var x = document.getElementById("v");
- if (x.style.display === "none") {
-   x.style.display = "block";
- } else {
-   x.style.display = "none";
- }
+//another user name
 
- var y = document.getElementById("ww");
- if (y.style.display === "block") {
-   y.style.display = "none";
- } else {
-   y.style.display = "block";
- }
- //giving user name
-myName= "Khushi";     
-   return false;
-const Toast = Swal.mixin({
- toast: true,
- position: 'top-end',
- showConfirmButton: false,
- timer: 3000,
- timerProgressBar: true,
- onOpen: (toast) => {
-   toast.addEventListener('mouseenter', Swal.stopTimer)
-   toast.addEventListener('mouseleave', Swal.resumeTimer)
- }
-})
 
-Toast.fire({
- icon: 'success',
- title: '<small>welcome web guru</small><br>You Have Signed in successfully'
-});
-}
-}
+
 
 function sendmessage(){
   //message

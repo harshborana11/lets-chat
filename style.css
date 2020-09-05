@@ -16,7 +16,7 @@ body {
   font-size: 5vh;
 }
 
-button {
+span {
   background-color: #fff;
   border-radius: 100%;
   position: fixed;
@@ -26,8 +26,21 @@ button {
   height: 12.5vh;
 }
 
-button i {
+span i {
   color: #21a37a;
+}
+
+span #c {
+  -webkit-transform: translate(25%, 30%);
+          transform: translate(25%, 30%);
+}
+
+#a {
+  display: block;
+}
+
+#b {
+  display: none;
 }
 
 #ww .login_container {
@@ -143,6 +156,10 @@ button i {
           box-shadow: 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff;
 }
 
+#messages {
+  margin-bottom: 10vh;
+}
+
 #messages h1 {
   font-size: 0.9rem;
   color: #13ffff;
@@ -152,5 +169,41 @@ button i {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 480px) {
+  span {
+    background-color: #fff;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 1%;
+    right: 0;
+    width: 8vh;
+    height: 8vh;
+  }
+  span i {
+    color: #21a37a;
+    -webkit-transform: translate(35%, 37%);
+            transform: translate(35%, 37%);
+  }
+  #a {
+    display: none;
+  }
+  #b {
+    display: block;
+  }
+  #message {
+    position: fixed;
+    width: 45vh;
+    height: 7vh;
+    bottom: 10px;
+    -webkit-transform: translateX(-4%);
+            transform: translateX(-4%);
+    background: #fff;
+    border-radius: 40px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 3vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
