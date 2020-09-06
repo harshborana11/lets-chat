@@ -195,7 +195,7 @@ span #c {
   }
   #message {
     position: fixed;
-    width: 45vh;
+    width: 40vh;
     height: 7vh;
     bottom: 10px;
     -webkit-transform: translateX(0%);
