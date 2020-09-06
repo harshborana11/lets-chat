@@ -1,6 +1,6 @@
 body {
   background: url(best.png), #03fc9d;
-      background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 #message {
@@ -153,14 +153,8 @@ span #c {
 #ww .login_box form .a:hover {
   background-color: #13ffff;
   color: #fff;
-  -webkit-box-shadow: 0 0 5px #13ffff,
- 0 0 5px #13ffff,
- 0 0 5px #13ffff,
- 0 0 5px #13ffff;
-          box-shadow: 0 0 5px #13ffff,
- 0 0 5px #13ffff,
- 0 0 5px #13ffff,
- 0 0 5px #13ffff;
+  -webkit-box-shadow: 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff;
+          box-shadow: 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff;
 }
 
 #messages {
@@ -177,7 +171,6 @@ span #c {
   color: #fff;
   margin-bottom: 10vh;
 }
-<<<<<<< HEAD
 
 @media screen and (max-width: 480px) {
   span {
@@ -205,8 +198,8 @@ span #c {
     width: 45vh;
     height: 7vh;
     bottom: 10px;
-    -webkit-transform: translateX(-4%);
-            transform: translateX(-4%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
     background: #fff;
     border-radius: 40px;
     margin-left: 10px;
@@ -215,6 +208,3 @@ span #c {
   }
 }
 /*# sourceMappingURL=style.css.map */
-=======
-/*# sourceMappingURL=style.css.map */
->>>>>>> 27be54f2de3b780ffeb47fc1d0057cae575de862
