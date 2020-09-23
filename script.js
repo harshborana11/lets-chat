@@ -28,9 +28,7 @@ function check(form){
  var x = document.getElementById("v");
  if (x.style.display === "none") {
    x.style.display = "block";
- } else {
-   x.style.display = "none";
- }
+ } 
 
  var y = document.getElementById("ww");
  if (y.style.display === "block") {
@@ -42,20 +40,16 @@ function check(form){
 myName= "Harsh";     
    return false;
 }
-  if(form.pwd.value == "Khushi")
+  else if(form.pwd.value == "Khushi")
   {
    var x = document.getElementById("v");
    if (x.style.display === "none") {
      x.style.display = "block";
-   } else {
-     x.style.display = "none";
    }
   
    var y = document.getElementById("ww");
    if (y.style.display === "block") {
      y.style.display = "none";
-   } else {
-     y.style.display = "block";
    }
    //giving user name
   myName= "Khushi";     
@@ -63,6 +57,9 @@ myName= "Harsh";
   
   
   }
+else {
+alert ("username is incorrect");
+}
 
 }
 //another user name
