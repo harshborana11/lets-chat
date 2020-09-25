@@ -40,7 +40,7 @@ function check(form){
 myName= "Harsh";     
    return false;
 }
-  else if(form.pwd.value == "Khushi")
+  else if(form.pwd.value == "Yogesh123")
   {
    var x = document.getElementById("v");
    if (x.style.display === "none") {
@@ -52,10 +52,23 @@ myName= "Harsh";
      y.style.display = "none";
    }
    //giving user name
-  myName= "Khushi";     
+  myName= "Yogesh";     
      return false;
+  }
+  else if(form.pwd.value == "20061976")
+  {
+   var x = document.getElementById("v");
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   }
   
-  
+   var y = document.getElementById("ww");
+   if (y.style.display === "block") {
+     y.style.display = "none";
+   }
+   //giving user name
+  myName= "priyanshu";     
+     return false;
   }
 else {
 alert ("username is incorrect");

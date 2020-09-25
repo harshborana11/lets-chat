@@ -36,6 +36,9 @@ span{
 #b{
   display: none;
 }
+#c{
+  display: none;
+}
 #ww{
     .login_container{
         position: relative;
@@ -167,11 +170,45 @@ span{
       }
       #b{
         display: block;
-      }
+      }      
       #message{
         position: fixed;
         width: 40vh;
         height: 7vh;
+        bottom: 10px;
+        transform: translateX(0%);
+        background: #fff;
+        border-radius: 40px;
+        margin-left: 10px;
+        text-align: center;
+        font-size: 3vh;
+      }
+      }
+      @media screen and (max-height: 550px){
+        span{
+          background-color: #fff;
+          border-radius: 100%;
+          position: fixed;
+          bottom: 2%;
+          right: 0;
+          width: 10vh;
+          height: 10vh;
+          i{
+              color: #21a37a;
+              transform: translate(32%,38%);
+          }
+      }
+      
+      #a{
+        display: none;
+      }
+      #b{
+        display: block;
+      }
+      #message{
+        position: fixed;
+        width: 55vh;
+        height: 9vh;
         bottom: 10px;
         transform: translateX(0%);
         background: #fff;
