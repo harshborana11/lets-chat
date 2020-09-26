@@ -153,8 +153,14 @@ span #c {
 #ww .login_box form .a:hover {
   background-color: #13ffff;
   color: #fff;
-  -webkit-box-shadow: 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff;
-          box-shadow: 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff;
+  -webkit-box-shadow: 0 0 5px #13ffff,
+ 0 0 5px #13ffff,
+ 0 0 5px #13ffff,
+ 0 0 5px #13ffff;
+          box-shadow: 0 0 5px #13ffff,
+ 0 0 5px #13ffff,
+ 0 0 5px #13ffff,
+ 0 0 5px #13ffff;
 }
 
 #messages {
@@ -208,7 +214,7 @@ span #c {
   }
 }
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 350px) {
   span {
     background-color: #fff;
     border-radius: 100%;
