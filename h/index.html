@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lets Chat</title>
+  <link rel="shortcut icon" href="a.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+  <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+  
+</head>
+<body>
+
+  <header>
+    <div class="login_container"id="ww"style="display:block;">
+      <div class="login_box">
+        <h2>login</h2>
+        <form>
+          <div class="user_box">
+            <input type="password" id="pwd" name="password" required="" />
+            <label>UserName</label>
+          </div>
+          <input value="submit" type="submit" class="a" onclick="return check(this.form)" id="ok">
+        </form>
+      </div>
+    </div>
+</header>  
+
+<div id="v" style="display: none;">
+<input placeholder="Type Message" id="message" autocomplete="off">
+<span  id="a" onclick="sendmessage()"><i id="c" class="fad fa-paper-plane fa-4x"></i></span>
+<span id="b"  onclick="sendmessage()"><i  class="fad fa-paper-plane fa-2x"></i></span>
+
+
+
+<!--emoji-->
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Emojies</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <button class="emoji">&#128512;</button>
+    <button class="emoji">&#128513;</button>
+    <button class="emoji">&#128514;</button>
+    <button class="emoji">&#129315;</button>
+    <button class="emoji">&#128515;</button>
+    <button class="emoji">&#128516;</button>
+    <button class="emoji">&#128518;</button>
+    <button class="emoji">&#128517;</button>
+    <button class="emoji">&#128521;</button>
+    <button class="emoji">&#128522;</button>
+    <button class="emoji">&#128523;</button>
+    <button class="emoji">&#128526;</button>
+    <button class="emoji">&#128525;</button>
+    <button class="emoji">&#128536;</button>
+    <button class="emoji">&#129300;</button>
+    <button class="emoji">&#128578;</button>
+    <button class="emoji">&#129303;</button>
+    <button class="emoji">&#128528;</button>
+    <button class="emoji">&#128529;</button>
+    <button class="emoji">&#128566;</button>
+    <button class="emoji">&#128580;</button>
+    <button class="emoji">&#128527;</button>
+    <button class="emoji">&#128547;</button>
+    <button class="emoji">&#128549;</button>
+    <button class="emoji">&#128558;</button>
+    <button class="emoji">&#129296;</button>
+    <button class="emoji">&#128559;</button>
+    <button class="emoji">&#128554;</button>
+    <button class="emoji">&#128555;</button>
+    <button class="emoji">&#128564;</button>
+    <button class="emoji">&#128524;</button>
+    <button class="emoji">&#129299;</button>
+    <button class="emoji">&#128539;</button>
+    <button class="emoji">&#128540;</button>
+    <button class="emoji">&#128541;</button>
+    <button class="emoji">&#129316;</button>
+    <button class="emoji">&#128530;</button>
+    <button class="emoji">&#128531;</button>
+    <button class="emoji">&#128532;</button>
+    <button class="emoji">&#128533;</button>
+    <button class="emoji">&#128579;</button>
+    <button class="emoji">&#128562;</button>
+    <button class="emoji">&#128577;</button>
+    <button class="emoji">&#128534;</button>
+    <button class="emoji">&#128542;</button>
+    <button class="emoji">&#128543;</button>
+    <button class="emoji">&#128548;</button>
+    <button class="emoji">&#128546;</button>
+    <button class="emoji">&#128557;</button>
+    <button class="emoji">&#128550;</button>
+    <button class="emoji">&#128551;</button>
+    <button class="emoji">&#128552;</button>
+    <button class="emoji">&#128553;</button>
+    <button class="emoji">&#128556;</button>
+    <button class="emoji">&#128560;</button>
+    <button class="emoji">&#128561;</button>
+    <button class="emoji">&#128563;</button>
+    <button class="emoji">&#128565;</button>
+    <button class="emoji">&#128545;</button>
+    <button class="emoji">&#128544;</button>
+    <button class="emoji">&#128519;</button>
+    <button class="emoji">&#129312;</button>
+    <button class="emoji">&#129313;</button>
+    <button class="emoji">&#129317;</button>
+    <button class="emoji">&#128567;</button>
+    <button class="emoji">&#129298;</button>
+    <button class="emoji">&#129301;</button>
+    <button class="emoji">&#129314;</button>
+    <button class="emoji">&#129319;</button>
+    <button class="emoji">&#128520;</button>
+    <button class="emoji">&#128127;</button>
+    <button class="emoji">&#128121;</button>
+    <button class="emoji">&#128122;</button>
+    <button class="emoji">&#128128;</button>
+    <button class="emoji">&#9760;</button>
+    <button class="emoji">&#128123;</button>
+    <button class="emoji">&#128125;</button>
+    <button class="emoji">&#128126;</button>
+  </div>
+
+</div>
+<!--dene emoji-->
+
+
+<!-- create list-->
+<header id="messages"></header>
+</div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="script.js"></script>
+</body>
+</html>

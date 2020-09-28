@@ -111,9 +111,321 @@ window.onclick = function(event) {
 }
 
 
+var emoji 
+var box = document.querySelector(".boxx");
 
-
-
+function aa() {
+  emoji = "&#128512;"
+  message.value += (" " + emoji);
+};
+function ab() {
+  emoji = "&#128513;"
+  message.value += (" " + emoji);
+};
+function ac() {
+  emoji = "&#128514;"
+  message.value += (" " + emoji);
+};
+function ad() {
+  emoji = "&#129315;"
+  message.value += (" " + emoji);
+};
+function ae() {
+  emoji = "&#128515;"
+  message.value += (" " + emoji);
+};
+function af() {
+  emoji = "&#128516;"
+  message.value += (" " + emoji);
+};
+function ag() {
+  emoji = "&#128518;"
+  message.value += (" " + emoji);
+};
+function ah() {
+  emoji = "&#128517"
+  message.value += (" " + emoji);
+};
+function ai() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aj() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function ak() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function al() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function am() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function an() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function ao() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function ap() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function ap() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aq() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function ar() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function as() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function at() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function au() {
+emoji = ""
+message.value += (" " + emoji);
+};
+function av() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aw() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function ax() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function ay() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function az() {
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aaa(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aab(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aac(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aad(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aae(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aaf(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aag(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aah(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aai(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aaj(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aak(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aal(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aam(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aan(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aao(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aap(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aaq(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aar(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aas(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aat(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aau(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aax(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aay(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aaz(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aba(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abb(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abc(){
+ emoji = ""
+ message.value += (" " + emoji);
+};
+function abd(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abe(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abf(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abg(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abh(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abi(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abj(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abk(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abl(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abm(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abn(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abo(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abp(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abq(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abr(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abs(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abt(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abu(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abv(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abw(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abx(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aby(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function abz(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
+function aca(){
+  emoji = ""
+  message.value += (" " + emoji);
+};
 
 
 
@@ -121,6 +433,8 @@ window.onclick = function(event) {
 
 function sendmessage(){
   //message
+
+
   var message = document.getElementById("message").value;
   //save to data base
   firebase.database().ref("messages").push().set({
