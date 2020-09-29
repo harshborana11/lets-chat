@@ -431,6 +431,7 @@ function sendmessage(){
     "sender": myName,
     "message": message
   });
+document.getElementById("message").value = "";
   //false retrun
   return false;
 }
