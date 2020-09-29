@@ -433,8 +433,7 @@ function aca(){
 
 function sendmessage(){
   //message
-
-
+If (box != ""){
   var message = document.getElementById("message").value;
   //save to data base
   firebase.database().ref("messages").push().set({
@@ -443,6 +442,10 @@ function sendmessage(){
   });
   //false retrun
   return false;
+}
+}
+else{
+alert ("message culdnot be empty");
 }
 firebase.database().ref("messages").on("child_added",function(snapshot){
  var html="";
@@ -453,3 +456,4 @@ firebase.database().ref("messages").on("child_added",function(snapshot){
  document.getElementById("messages").innerHTML += html; 
  return true;
 });
+
