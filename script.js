@@ -147,87 +147,79 @@ function ah() {
   message.value += (" " + emoji);
 };
 function ai() {
-  emoji = ""
+  emoji = "&#128521;"
   message.value += (" " + emoji);
 };
 function aj() {
-  emoji = ""
+  emoji = "&#128522;"
   message.value += (" " + emoji);
 };
 function ak() {
-  emoji = ""
+  emoji = "&#128523;"
   message.value += (" " + emoji);
 };
 function al() {
-  emoji = ""
+  emoji = "&#128526;"
   message.value += (" " + emoji);
 };
 function am() {
-  emoji = ""
+  emoji = "&#128525;"
   message.value += (" " + emoji);
 };
 function an() {
-  emoji = ""
+  emoji = "&#128536;"
   message.value += (" " + emoji);
 };
 function ao() {
-  emoji = ""
+  emoji = "&#129300;"
   message.value += (" " + emoji);
 };
 function ap() {
-  emoji = ""
-  message.value += (" " + emoji);
-};
-function ap() {
-  emoji = ""
-  message.value += (" " + emoji);
-};
-function aq() {
-  emoji = ""
+  emoji = "&#128578;"
   message.value += (" " + emoji);
 };
 function ar() {
-  emoji = ""
+  emoji = "&#129303;"
   message.value += (" " + emoji);
 };
 function as() {
-  emoji = ""
+  emoji = "&#128528;"
   message.value += (" " + emoji);
 };
 function at() {
-  emoji = ""
+  emoji = "&#128529;"
   message.value += (" " + emoji);
 };
 function au() {
-emoji = ""
+emoji = "&#128566;"
 message.value += (" " + emoji);
 };
 function av() {
-  emoji = ""
+  emoji = "&#128580;"
   message.value += (" " + emoji);
 };
 function aw() {
-  emoji = ""
+  emoji = "&#128527;"
   message.value += (" " + emoji);
 };
 function ax() {
-  emoji = ""
+  emoji = "&#128547;"
   message.value += (" " + emoji);
 };
 function ay() {
-  emoji = ""
+  emoji = "&#128549;"
   message.value += (" " + emoji);
 };
 function az() {
-  emoji = ""
+  emoji = "&#128558;"
   message.value += (" " + emoji);
 };
 function aaa(){
-  emoji = ""
+  emoji = "&#129296;"
   message.value += (" " + emoji);
 };
 function aab(){
-  emoji = ""
+  emoji = "&#128559;"
   message.value += (" " + emoji);
 };
 function aac(){
@@ -433,7 +425,6 @@ function aca(){
 
 function sendmessage(){
   //message
-If (box != ""){
   var message = document.getElementById("message").value;
   //save to data base
   firebase.database().ref("messages").push().set({
@@ -443,10 +434,7 @@ If (box != ""){
   //false retrun
   return false;
 }
-}
-else{
-alert ("message culdnot be empty");
-}
+
 firebase.database().ref("messages").on("child_added",function(snapshot){
  var html="";
  html += "<div>";
