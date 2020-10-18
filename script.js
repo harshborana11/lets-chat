@@ -443,6 +443,7 @@ firebase.database().ref("messages").on("child_added",function(snapshot){
  html += "</div>";
 
  document.getElementById("messages").innerHTML += html; 
+
  return true;
 });
 
