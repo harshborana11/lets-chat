@@ -420,7 +420,10 @@ function aca(){
 };
 
 
-
+var date = new Date();
+var mins = date.getMinutes();
+var hours = date.getHours() % 12 || 12;
+var time = hours + ":" + mins;
 
 
 function sendmessage(){
@@ -429,17 +432,20 @@ function sendmessage(){
   //save to data base
   firebase.database().ref("messages").push().set({
     "sender": myName,
-    "message": message
+    "message": message,
+    "time": time
   });
 document.getElementById("message").value = "";
   //false retrun
   return false;
 }
-
 firebase.database().ref("messages").on("child_added",function(snapshot){
  var html="";
  html += "<div>";
-    html += "<small><h1>" + snapshot.val().sender + "</h1></small><big><h2>" + snapshot.val().message + "</h2></big>";
+  html += "<section>";
+    html += "<small><h1>" + snapshot.val().sender + "</h1></small><big><h2><br>" + snapshot.val().message + "</h2></big>";
+    html += "<h3><br>" + snapshot.val().time + "</h3>";
+  html += "</section>";
  html += "</div>";
 
  document.getElementById("messages").innerHTML += html; 

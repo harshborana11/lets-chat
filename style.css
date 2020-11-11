@@ -17,6 +17,17 @@ body {
   font-size: 5vh;
 }
 
+section {
+  background-color: #0580a5;
+  max-height: 10vh;
+  margin-top: 5px;
+  border-radius: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px;
+}
+
 span {
   background-color: #fff;
   border-radius: 100%;
@@ -164,12 +175,25 @@ span #c {
 #messages h1 {
   font-size: 0.9rem;
   color: #13ffff;
+  line-height: 10px;
 }
 
 #messages h2 {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 10vh;
+  line-height: 10px;
+}
+
+#messages .hii {
+  background-color: #000000;
+  display: inline block;
+  width: auto;
+}
+
+#messages h3 {
+  padding: 10px;
+  color: #055888;
 }
 
 #messages button {
