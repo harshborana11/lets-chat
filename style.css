@@ -18,13 +18,15 @@ body {
 }
 
 section {
-  background-color: #0580a5;
+   background-color: #0580a5;
+  max-height: max-Content;
   margin-top: 5px;
   border-radius: 10px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 10px;
+  padding: 5px;
+  font-size: 10px;
 }
 
 span {
