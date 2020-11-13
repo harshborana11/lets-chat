@@ -441,10 +441,14 @@ document.getElementById("message").value = "";
 }
 firebase.database().ref("messages").on("child_added",function(snapshot){
  var html="";
+
  html += "<div>";
   html += "<section>";
-    html += "<small><h1>" + snapshot.val().sender + "</h1></small><big><h2><br>" + snapshot.val().message + "</h2></big>";
+    html += "<small><h1>" + snapshot.val().sender + "</h1></small><big><h2 id='message-"+ snapshot.key +"'><br>" + snapshot.val().message + "</h2></big>";
     html += "<h3><br>" + snapshot.val().time + "</h3>";
+      html += "<button data-id='" + snapshot.key +"' onclick='deleteMessage(this);'>";
+      html += "<i class='new fa fa-trash' aria-hidden='true'></i>"
+      html += "</button>";
   html += "</section>";
  html += "</div>";
 
@@ -452,4 +456,11 @@ firebase.database().ref("messages").on("child_added",function(snapshot){
 
  return true;
 });
+function deleteMessage(self) {
+  var messageId = self.getAttribute("data-id");
+  firebase.database().ref("messages").child(messageId).remove();
+  firebase.database().ref("messages").on("child_removed", function (snapshot) {
+    document.getElementById("message-" + snapshot.key).innerHTML = "This Message Is Deleted";
+  });
+}
 
