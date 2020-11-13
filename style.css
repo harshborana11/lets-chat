@@ -19,7 +19,7 @@ body {
 
 section {
   background-color: #0580a5;
-  max-height: 10vh;
+  max-height: max-contant;
   margin-top: 5px;
   border-radius: 10px;
   display: -webkit-inline-box;
@@ -172,25 +172,29 @@ button {
 #ww .login_box form .a:hover {
   background-color: #13ffff;
   color: #fff;
-  -webkit-box-shadow: 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff;
-          box-shadow: 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff, 0 0 5px #13ffff;
+  -webkit-box-shadow: 0 0 5px #13ffff,
+ 0 0 5px #13ffff,
+ 0 0 5px #13ffff,
+ 0 0 5px #13ffff;
+          box-shadow: 0 0 5px #13ffff,
+ 0 0 5px #13ffff,
+ 0 0 5px #13ffff,
+ 0 0 5px #13ffff;
 }
 
 #messages {
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
 }
 
 #messages h1 {
   font-size: 0.9rem;
   color: #13ffff;
-  line-height: 10px;
 }
 
 #messages h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #fff;
-  margin-bottom: 10vh;
-  line-height: 10px;
+  margin-bottom: 2vh;
 }
 
 #messages .hii {
