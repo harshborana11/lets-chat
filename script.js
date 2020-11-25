@@ -46,13 +46,18 @@ myName= "Harsh";
    if (x.style.display === "none") {
      x.style.display = "block";
    }
-  
+  else if(form.pwd.value == "happy123")
+  {
+   var x = document.getElementById("v");
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   }
    var y = document.getElementById("ww");
    if (y.style.display === "block") {
      y.style.display = "none";
    }
    //giving user name
-  myName= "Yogesh";     
+  myName= "happy";     
      return false;
   }
   else if(form.pwd.value == "20061976")
