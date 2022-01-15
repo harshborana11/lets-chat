@@ -27,8 +27,20 @@ section {
   display: inline-flex;
   padding: 10px;
 }
+.message{
+  /* Rectangle 2 */
 
-span {
+position: absolute;
+width: auto;
+height: auto;
+left: 105px;
+top: 259px;
+
+background: rgba(60, 199, 255, 0.54);
+border-radius: 20px;
+
+}
+.span {
   background-color: #fff;
   border-radius: 100%;
   position: fixed;
