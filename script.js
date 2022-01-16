@@ -23,7 +23,7 @@ input.addEventListener("keyup", function(event) {
    document.getElementById("a").click();
   }
 });
-   
+
 
 //form validation
 
@@ -105,36 +105,6 @@ alert ("username is incorrect");
 
 
 
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
-
-
 var date = new Date();
 var mins = date.getMinutes();
 var hours = date.getHours() % 12 || 12;
@@ -142,9 +112,7 @@ var time = hours + ":" + mins;
 
 
 function sendmessage(){
-  
   //message
-  document.getElementById('sound1').play();
   var message = document.getElementById("message").value;
   //save to data base
   firebase.database().ref("messages").push().set({
@@ -159,13 +127,15 @@ document.getElementById("message").value = "";
 firebase.database().ref("messages").on("child_added",function(snapshot){
  var html="";
 
-  html += "<span class='message'>";
+ html += "<div>";
+  html += "<section>";
     html += "<small><h1>" + snapshot.val().sender + "</h1></small><big><h2 id='message-"+ snapshot.key +"'><br>" + snapshot.val().message + "</h2></big>";
     html += "<h3><br>" + snapshot.val().time + "</h3>";
       html += "<button data-id='" + snapshot.key +"' onclick='deleteMessage(this);'>";
       html += "<i class='new fa fa-trash' aria-hidden='true'></i>"
       html += "</button>";
-  html += "</span>";
+  html += "</section>";
+ html += "</div>";
 
  document.getElementById("messages").innerHTML += html; 
 
