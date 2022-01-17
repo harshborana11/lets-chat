@@ -14,7 +14,7 @@
 
 // my app
 
-var myname
+
 
 var input = document.getElementById("message");
 input.addEventListener("keyup", function(event) {
@@ -22,84 +22,49 @@ input.addEventListener("keyup", function(event) {
    event.preventDefault();
    document.getElementById("a").click();
   }
-});
-
-
-//form validation
-
-//first user name
-
-function check(form){
-  if(form.pwd.value == "Harsh.1123")
+}); 
+var myname
+var hidden = document.getElementById("hidden-box");
+var visible = document.getElementById("container");
+var passwords = [  
 {
- var x = document.getElementById("v");
- if (x.style.display === "none") {
-   x.style.display = "block";
- } 
+  username : "Harsh",
+  password : "1123"
+}, 
+{
+  username : "Yogesh",
+  password : "50221"
+},
+{
+  username : "Dushyant",
+  password : "9680"
+},
 
- var y = document.getElementById("ww");
- if (y.style.display === "block") {
-   y.style.display = "none";
- } else {
-   y.style.display = "block";
- }
- //giving user name
-myName= "Harsh";     
-   return false;
-}
-  else if(form.pwd.value == "Yogesh123")
-  {
-   var x = document.getElementById("v");
-   if (x.style.display === "none") {
-     x.style.display = "block";
-   }
+]
+function check(form){
+  var password = document.getElementById('pwd').value;
+  for(i = 0; i < passwords.length; i++ ){
+    if(password == passwords[i].password){  
+      if (visible.style.display === "block" && hidden.style.display === "none" ) {
+        visible.style.display = "none";
+        hidden.style.display = "block";
+        myName= passwords[i].username; 
+        setTimeout(function() {
   
-   var y = document.getElementById("ww");
-   if (y.style.display === "block") {
-     y.style.display = "none";
-   }
-   //giving user name
-  myName= "Yogesh";     
-     return false;
+    document.body.scrollTop = 100000000; 
+    document.documentElement.scrollTop = 10000000000;
+  }, 100);
+        return false;
+        }
+        
+    }
+    else{
+      swal("Password Incorrect", "You Have entered Wrong Password", "error");
+      return false;
+    }
   }
-  else if(form.pwd.value == "20061976")
-  {
-   var x = document.getElementById("v");
-   if (x.style.display === "none") {
-     x.style.display = "block";
-   }
   
-   var y = document.getElementById("ww");
-   if (y.style.display === "block") {
-     y.style.display = "none";
-   }
-   //giving user name
-  myName= "priyanshu";     
-     return false;
-  }
-    else if(form.pwd.value == "monk11")
-  {
-   var x = document.getElementById("v");
-   if (x.style.display === "none") {
-     x.style.display = "block";
-   }
-  
-   var y = document.getElementById("ww");
-   if (y.style.display === "block") {
-     y.style.display = "none";
-   }
-   //giving user name
-  myName= "monk";     
-     return false;
-  }
-else {
-alert ("username is incorrect");
 }
-
-}
-//another user name
-
-
 
 
 
@@ -112,6 +77,7 @@ var time = hours + ":" + mins;
 
 
 function sendmessage(){
+  document.getElementById('sound1').play();
   //message
   var message = document.getElementById("message").value;
   //save to data base
@@ -144,8 +110,8 @@ firebase.database().ref("messages").on("child_added",function(snapshot){
 function deleteMessage(self) {
   var messageId = self.getAttribute("data-id");
   firebase.database().ref("messages").child(messageId).remove();
-  firebase.database().ref("messages").on("child_removed", function (snapshot) {
-    document.getElementById("message-" + snapshot.key).innerHTML = "This Message Is Deleted";
-  });
+  
 }
-
+firebase.database().ref("messages").on("child_removed", function (snapshot) {
+  document.getElementById("message-" + snapshot.key).innerHTML = "This Message Is Deleted";
+});

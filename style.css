@@ -1,9 +1,10 @@
 body {
   margin-top: 5%;
-  background: url(BG.jpg), #03fc9d;
+  background: url(BG.jpg), #000;
   background-attachment: fixed;
   background-size: cover  ;
   background-repeat: no-repeat;
+  margin-bottom: 8%;
 }
 .navbar{
   display: block;
@@ -26,18 +27,17 @@ border-radius: 0px 0px 30px 30px;
 
 #message {
 background: rgba(60, 60, 60, 0.82);
-border-radius: 20px 20px 0px 0px;
+
+border-radius: 30px 30px 0px 0px;
 text-decoration: #fff;
   position: fixed;
-  width: 100vh;
+  width: 100%;
   height: 10vh;
-  bottom: 5px;
-  -webkit-transform: translateX(63%);
-          transform: translateX(63%);
-  border-radius: 40px;
-  margin-left: 10px;
+  bottom: 0;
+  left: 0;
   text-align: center;
   font-size: 5vh;
+  color: #fff;
 }
 
 section {
@@ -87,7 +87,7 @@ button {
   border: transparent;
 }
 
-#ww .login_container {
+#container .login_container {
   position: relative;
   height: 100vh;
   display: -webkit-box;
@@ -101,7 +101,7 @@ button {
           align-items: center;
 }
 
-#ww .login_box {
+#container .login_box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -114,7 +114,7 @@ button {
   height: 70%;
 }
 
-#ww .login_box h2 {
+#container .login_box h2 {
   margin: 0 0 30px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -124,7 +124,7 @@ button {
   margin: 10px 20px;
 }
 
-#ww .login_box .user_box {
+#container .login_box .user_box {
   position: relative;
   padding: 5px 50px;
   margin: 30px 30px;
@@ -139,7 +139,7 @@ button {
           align-items: center;
 }
 
-#ww .login_box .user_box input {
+#container .login_box .user_box input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -149,9 +149,10 @@ button {
   border-bottom: 1px solid #fff;
   outline: none;
   background-color: transparent;
+  
 }
 
-#ww .login_box .user_box label {
+#container .login_box .user_box label {
   position: absolute;
   margin-left: 50px;
   top: 0;
@@ -163,14 +164,14 @@ button {
   transition: 0.5s;
 }
 
-#ww .login_box .user_box input:focus ~ label,
-#ww .login_box .user_box input:valid ~ label {
+#container .login_box .user_box input:focus ~ label,
+#container .login_box .user_box input:valid ~ label {
   top: -20px;
   color: #13ffff;
   font-size: 12px;
 }
 
-#ww .login_box form .a {
+#container .login_box form .a {
   background-color: #13ffff;
   display: inline-block;
   padding: 10px 20px;
@@ -189,7 +190,7 @@ button {
   left: 60%;
 }
 
-#ww .login_box form .a:hover {
+#container .login_box form .a:hover {
   background-color: #13ffff;
   color: #fff;
   -webkit-box-shadow: 0 0 5px #13ffff,
@@ -291,78 +292,6 @@ button {
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
-  body{
-    margin-top: 25%;
-  }
-  span {
-    background-color: #fff;
-    border-radius: 100%;
-    position: fixed;
-    bottom: 1%;
-    right: 0;
-    width: 8vh;
-    height: 8vh;
-  }
-  span i {
-    
-    -webkit-transform: translate(35%, 37%);
-            transform: translate(35%, 37%);
 
-  }
-  #a {
-    display: none;
-  }
-  #b {
-    display: block;
-  }
-  #message {
-    position: fixed;
-    width: 40vh;
-    height: 7vh;
-    bottom: 10px;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    background: #fff;
-    border-radius: 40px;
-    margin-left: 10px;
-    text-align: center;
-    font-size: 3vh;
-  }
-}
 
-@media screen and (max-height: 550px) {
-  span {
-    background-color: #fff;
-    border-radius: 100%;
-    position: fixed;
-    bottom: 2%;
-    right: 2%;
-    width: 10vh;
-    height: 10vh;
-  }
-  span i {
-    color: #21a37a;
-    -webkit-transform: translate(0%, 24%);
-            transform: translate(0%, 24%);
-  }
-  #a {
-    display: none;
-  }
-  #b {
-    display: block;
-  }
-  #message {
-    position: fixed;
-    width: 80vh;
-    height: 9vh;
-    bottom: 10px;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    background: #fff;
-    border-radius: 40px;
-    margin-left: 10px;
-    text-align: center;
-    font-size: 3vh;
-  }
-}
+
