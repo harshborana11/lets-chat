@@ -51,19 +51,20 @@ function check(form){
         myName= passwords[i].username; 
         setTimeout(function() {
   
-    document.body.scrollTop = 100000000; 
-    document.documentElement.scrollTop = 10000000000;
-  }, 100);
+          document.body.scrollTop = 10000000000; 
+          document.documentElement.scrollTop = 10000000000;
+        }, 100);
         return false;
         }
         
     }
-    else{
-      swal("Password Incorrect", "You Have entered Wrong Password", "error");
-      return false;
-    }
+    
   }
   
+    swal("Password Incorrect", "You Have entered Wrong Password", "error");
+    return false;
+
+
 }
 
 
