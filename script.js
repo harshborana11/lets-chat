@@ -43,6 +43,10 @@ var passwords = [
   username : "Sai Swaroop",
   password : "9999"
 },
+{
+  username : "Meha",
+  password : "69420"
+},
 ]
 function check(form){
   var password = document.getElementById('pwd').value;
