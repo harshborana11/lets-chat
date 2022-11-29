@@ -44,8 +44,8 @@ var passwords = [
   password : "9999"
 },
 {
-  username : "Meha",
-  password : "69420"
+  username : "Aila",
+  password : "229994"
 },
 ]
 function check(form){
