@@ -36,8 +36,8 @@ var passwords = [
   password : "50221"
 },
 {
-  username : "Dushyant",
-  password : "9680"
+  username : "Pratyax",
+  password : "6968"
 },
 
 {
