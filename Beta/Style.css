@@ -141,3 +141,15 @@ input:focus {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media only screen and (max-width: 600px) {
+  .textBoxnight {
+  width: 100vw;
+  height: 10vh;
+  padding: 1rem 3rem;
+  text-align: center;
+  color: #fff;
+  font-size: 3vh;
+  flex-shrink: 0;
+}
+}
