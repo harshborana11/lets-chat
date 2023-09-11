@@ -4,9 +4,9 @@
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
 }
-:root{
---themeColor1: rgba(79, 103, 133, 0.64);
---themeColor2:rgba(230, 182, 196, 0.32);
+:root {
+  --themeColor1: rgba(79, 103, 133, 0.64);
+  --themeColor2: rgba(230, 182, 196, 0.32);
 }
 
 body {
@@ -157,20 +157,19 @@ input:focus {
 
 @media only screen and (max-width: 600px) {
   .textBoxnight {
-  width: 100vw;
-  height: 10vh;
-  padding: 1rem 3rem;
-  text-align: center;
-  color: #fff;
-  font-size: 3vh;
-  flex-shrink: 0;
-}
+    width: 100vw;
+    height: 10vh;
+    padding: 1rem 3rem;
+    text-align: center;
+    color: #fff;
+    font-size: 3vh;
+    flex-shrink: 0;
+  }
 }
 
-
-.Mountains{
+.Mountains {
   background-image: url(NIght.jpg);
 }
-.sakura{
+.sakura {
   background-image: url(Sakura.jpg);
 }

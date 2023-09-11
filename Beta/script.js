@@ -19,9 +19,13 @@ input.addEventListener("keyup", function (event) {
     sendmessage();
   }
 });
-
-var myName = prompt("Your Name?");
-//var myName = 'Harsh';
+function scrollToBottom() {
+  var height = document.body.scrollHeight;
+  window.scroll(0, height);
+  
+}
+//var myName = prompt("Your Name?");
+var myName = "Harsh";
 var date = new Date();
 var mins = date.getMinutes();
 var hours = date.getHours() % 12 || 12;
@@ -87,9 +91,11 @@ firebase
     html += "</div>";
     html += "</div>";
     document.getElementById("messages").innerHTML += html;
-
+    scrollToBottom();
     if (myName === snapshot.val().sender) {
       document.getElementById(snapshot.key).style.display = "block";
+    } else {
+      document.getElementById("sound2").play();
     }
     return true;
   });
@@ -110,36 +116,44 @@ firebase
     }
     setTimeout(myFunction, 3000);
   });
-  const BG1 = 'var(--themeColor1)';
-  const BG2 = 'var(--themeColor2)';
+const BG1 = "var(--themeColor1)";
+const BG2 = "var(--themeColor2)";
 
+function toggle() {
+  document.getElementById("Body").classList.toggle("sakura");
+  document.getElementById("Body").classList.toggle("Mountains");
+  if (document.getElementById("Body").classList.contains("sakura")) {
+    document.querySelector(".Headder").style.background = BG2;
+    document.querySelector(".textBoxnight").style.background = BG2;
 
-
-  function toggle() {
-    document.getElementById('Body').classList.toggle('sakura');
-    document.getElementById('Body').classList.toggle('Mountains');
-    
-
-    if (document.getElementById('Body').classList.contains('sakura')){
-      document.querySelector('.Headder').style.background = BG2; 
-      document.querySelector('.textBoxnight').style.background = BG2;
-      document.querySelector('.toggle').style.background = 'url(toggleS.svg)';
-      document.querySelector('.toggle').style.backgroundRepeat = 'no-repeat';
-      document.querySelector('.toggle').style.backgroundSize = 'contain';
-
-    }
-    else if (document.getElementById('Body').classList.contains('Mountains')){
-      document.querySelector('.Headder').style.background = BG1; 
-      document.querySelector('.textBoxnight').style.background = BG1;
-      document.querySelector('.toggle').style.background = 'url(toggle.svg)';
-      document.querySelector('.toggle').style.backgroundRepeat = 'no-repeat';
-      document.querySelector('.toggle').style.backgroundSize = 'contain';
-    }
-  };
-  function scrollPageToBottom() {
-    // Scroll to the bottom of the page
-    window.scrollTo(0, document.body.scrollHeight);
+    document.querySelector(".toggle").style.background = "url(toggleS.svg)";
+    document.querySelector(".toggle").style.backgroundRepeat = "no-repeat";
+    document.querySelector(".toggle").style.backgroundSize = "contain";
+  } else if (document.getElementById("Body").classList.contains("Mountains")) {
+    document.querySelector(".Headder").style.background = BG1;
+    document.querySelector(".textBoxnight").style.background = BG1;
+    document.querySelector(".toggle").style.background = "url(toggle.svg)";
+    document.querySelector(".toggle").style.backgroundRepeat = "no-repeat";
+    document.querySelector(".toggle").style.backgroundSize = "contain";
   }
-  
-  // Call the scrollPageToBottom function every 3 seconds
-  setInterval(scrollPageToBottom, 30);nterval(scrollToBottom(), 3);
+}
+
+setTimeout(scrollToBottom(), 6000);
+function notifyMe() {
+  // Check if notifications are supported.
+  if (Notification.prototype.hasOwnProperty("permission")) {
+    // Check if permission has been granted.
+    if (Notification.permission === "granted") {
+      // Create a new notification.
+      var notification = new Notification("Hi there!");
+    } else {
+      // Ask for permission to send notifications.
+      Notification.requestPermission().then((permission) => {
+        // If the user accepts, create the notification.
+        if (permission === "granted") {
+          var notification = new Notification("Hi there!");
+        }
+      });
+    }
+  }
+}
