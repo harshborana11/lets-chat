@@ -24,8 +24,8 @@ function scrollToBottom() {
   window.scroll(0, height);
   
 }
-//var myName = prompt("Your Name?");
-var myName = "Harsh";
+var myName = prompt("Your Name?");
+//var myName = "Harsh";
 var date = new Date();
 var mins = date.getMinutes();
 var hours = date.getHours() % 12 || 12;
