@@ -9,11 +9,11 @@
     <title>Lets   chat</title>
     <link rel="stylesheet" href="Style.css" />
   </head>
-  <body>
+  <body id="Body" class="Mountains">
     <div class="container">
-      <div class="Headder">
+      <div class="Headder" id="Headder">
         <div  class="lc" ></div>
-        <div  class="toggle" ></div>
+        <div  class="toggle" onclick="toggle()" ></div>
       </div>         
       <div id="messages" class="msgbox"></div>
       </div>
@@ -22,6 +22,7 @@
         <span  id="sendMsg" style="display: block;" onclick="sendmessage()"></span>
       </div>
     </div>
+    <audio id="sound" src="sound.mp3"></audio>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
     <script src="script.js"></script>
