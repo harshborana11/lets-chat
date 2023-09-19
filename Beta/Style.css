@@ -107,7 +107,7 @@ body {
   font-size: 1.45em;
   color: #fff;
   line-height: 0.5em;
-  margin-bottom: 2vh;
+  margin: .5em;
 }
 
 #messages h3 {
@@ -155,21 +155,61 @@ input:focus {
   background-size: contain;
 }
 
-@media only screen and (max-width: 600px) {
-  .textBoxnight {
-    width: 100vw;
-    height: 10vh;
-    padding: 1rem 3rem;
-    text-align: center;
-    color: #fff;
-    font-size: 3vh;
-    flex-shrink: 0;
-  }
-}
 
 .Mountains {
   background-image: url(NIght.jpg);
 }
 .sakura {
   background-image: url(Sakura.jpg);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .textBoxnight {
+    width: 100vw;
+    padding: 1rem 3rem;
+    font-size: 3vh;
+    flex-shrink: 0;
+  }
+  #sendMsg {
+    display: none !important;
+  }
+  .lc {
+    width:20vw;
+    height:20vh;
+    margin-left: 1rem;
+  }
+  .Headder {
+    display: block;
+    width: 100%;
+    height: 9vh;
+  }
+  .toggle {
+    width: 18vw;
+    height: 12vh;
+  }
+  #messages {
+    max-width: 80vh;
+    padding: 2em;
+  }
+  #messages h1 {
+    font-size: .9em;
+  }
+  #messages h2 {
+    font-size: 1em;
+    color: #fff;
+    line-height: 0.3em;
+    margin: .5em;
+  }
+  
+  #messages h3 {
+    font-size: .75em;
+  }
+  .pfp1 {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
 }
