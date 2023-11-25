@@ -58,14 +58,25 @@ firebase
   .database()
   .ref("messages")
   .on("child_added", function (snapshot) {
+    var img = '';
+    if (snapshot.val().sender  === 'Harsh'){
+      img = snapshot.val().sender +'.jpeg'
+      
+    }else if (snapshot.val().sender  === 'ao'){
+      img = snapshot.val().sender +'.jpeg'
+      
+    }  else {
+      img = 'unknown.jpg'
+    }
+
     var html = "";
     html += "<div class='divPfpNMsg'>";
     html +=
       "<div class='pfp1' id='image-" +
-      snapshot.key +
+      snapshot.key  +
       "' style='background: url(" +
-      snapshot.val().sender +
-      ".jpeg);    background-repeat: no-repeat; background-size: cover;'></div>";
+      img +
+      ");    background-repeat: no-repeat; background-size: cover;'></div>";
     html += "<div >";
     html += "<section id='section-" + snapshot.key + "' class='message'>";
     html +=
@@ -92,11 +103,13 @@ firebase
     html += "</div>";
     document.getElementById("messages").innerHTML += html;
     scrollToBottom();
+   
     if (myName === snapshot.val().sender) {
       document.getElementById(snapshot.key).style.display = "block";
     } else {
       document.getElementById("sound2").play();
     }
+   
     return true;
   });
 
@@ -157,3 +170,4 @@ function notifyMe() {
     }
   }
 }
+
