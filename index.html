@@ -1,55 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lets Chat</title>
-  <link rel="shortcut icon" href="a.ico" type="image/x-icon">
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  
-</head>
-<body>
-  <header>
-    <div class="login_container"id="container"style="display:block;">
-      <div class="login_box">
-        <h2>login</h2>
-        <form>
-          <div class="user_box">
-            <input type="password" id="pwd" name="password" required="" />
-            <label>UserName</label>
-            
-          </div>
-          <button class="a" onclick="return check(this.form)" id="ok">SUBMIT</button>
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="5" /> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Lets   chat</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body id="Body" class="Mountains">
+    <div class="container">
+      <div class="Headder" id="Headder">
+        <div  class="lc" ></div>
+        <div  class="toggle" onclick="toggle()" ></div>
+      </div>         
+      <div id="messages"  class="msgbox"></div>
+      </div>
+      <div >
+        <input placeholder="Type Message" id="message" class="textBoxnight" autocomplete="off">
+        <span  id="sendMsg" style="display: block;" onclick="sendmessage()"></span>
       </div>
     </div>
-</header>  
-
-<div id="hidden-box" style="display: none;">
-  
-<span class="navbar "><img src="lc.svg" alt=""></span>
-	<audio style="display: none;" id="sound1" src="Pop.mp3" preload="auto"></audio>
-<input placeholder="Type Message" id="message" class="boxx" autocomplete="off">
-<span  id="a" style="display: none;" onclick="sendmessage()"></span>
-
-
-  
-<!-- create list-->
-<div class="messagesBuUser" id="messages"></div>
-</div>
-
-
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <audio id="sound" src="sound.mp3"></audio>
+     <audio id="sound2" src="sound2.mp3"></audio>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="script.js"></script>
-<script src= 
-"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
-    </script> 
-</body>
+    <script src="script.js"></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
 </html>
+  
